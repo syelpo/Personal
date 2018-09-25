@@ -1,4 +1,4 @@
-package horseTornado;
+package game;
 
 import processing.core.PApplet;
 import processing.core.PImage;
@@ -7,7 +7,7 @@ import processing.core.PFont;
 //Finish meteor spawning, movement towards earth
 //hi there i am making changes
 
-public class HorseTornado extends PApplet
+public class Game extends PApplet
 {
 	int increment = 0;
 	int red = 50, green = 50, blue = 50;
@@ -119,7 +119,7 @@ public class HorseTornado extends PApplet
 			
 			textSize(20);
 			
-			text("©2017 Yelpo Games Inc. All rights reserved.", 800, 350);
+			text("Welcome", 800, 350);
 			
 			
 		}
@@ -349,7 +349,7 @@ public class HorseTornado extends PApplet
 	{
 		textAlign(CENTER);
 		textSize(50);
-		text("You cleared the tenth anime betrayal, now onto the other nine.\nPress any key to move on", 800, 450);
+		text("Press any key to move on", 800, 450);
 		
 		if(keyPressed)
 		{
@@ -419,7 +419,7 @@ public class HorseTornado extends PApplet
 		image(JimmyNeutron, 800, 450);
 		image(SpeechBubble, 1000, 350, 400, 400);
 		textSize(18);
-		text("JAMES ISAAC NEUTRON!\n Press any key to move on", 1000, 350);
+		text("Press any key to move on", 1000, 350);
 		if(keyPressed)
 			level = 5;
 	}
@@ -440,8 +440,8 @@ public class HorseTornado extends PApplet
 	}
 	public void stage3Cleared() 
 	{
-		image(Stage3Cleared, 800, 450);
-		text("You passed stage 3, press any key to move on", 800, 800);
+		
+		text("Press any key to move on", 800, 800);
 		if(keyPressed)
 			level = 7;
 	}
